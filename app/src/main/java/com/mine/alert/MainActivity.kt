@@ -78,18 +78,10 @@ fun MyAlertDialog(shouldShowDialog: MutableState<Boolean>) {
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun MainScreenPreview() {
     AlertDialogTheme {
-        Greeting("Android")
+        MainScreen()
     }
 }
